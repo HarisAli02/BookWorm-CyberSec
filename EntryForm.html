@@ -1,0 +1,46 @@
+<html>
+    <title>Form</title>
+        <body>
+			<h1> Registration </h1></br>
+		
+				<div class="navbar">
+			<a class="active" href="index.html">Index</a>
+			<a href="page2.html">Page2</a>
+			<a href="page3.html">Page3</a>
+			<a href="#page4">Page4</a>
+		
+		</div></br>
+		
+            <h2>Sign up for our Newsletter!</h2>
+                <link href ="style.css" rel="stylesheet">
+                <form action="NewsletterForm.php" method="post" onsubmit="FormProcessed()">
+                    <label for="TB_FName"> First Name: </label>
+                    <input type="text" name="TB_FName" id="TB_FName" pattern="[a-zA-Z]+"
+					title="Field can NOT include any special characters, numbers or spaces!" required>
+                    <br/>
+                    <br/>
+                    <label for="TB_LName"> Last Name: </label>
+                    <input type="text" name="TB_LName" id="TB_LName" pattern="[a-zA-Z]+" 
+					title="Field can NOT include any special characters,numbers or spaces!" required>
+                    <br/>
+                    <br/>
+                    <label for="TB_Email"> Email: </label>
+                    <input type="email" name="TB_Email" id="TB_Email" required>
+                    <br/>
+                    <br/>   
+					<label for="TB_Age"> Age: </label>					
+                      <input type="number" id="age" name="age" min="1" max="120" required>
+                    </input>   
+					<br/>
+					<br/>
+					<br/>
+					<input type="submit" value="Register" onclick="You have signed up successfully!">							
+                </form>
+				
+				<script>
+				function FormProcessed() {
+				alert("You have signed up successfully");
+				}
+				</script>
+        </body>
+</html>
